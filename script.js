@@ -4,6 +4,9 @@ let score = 0;
 let userAnswers = [];
 let reviewingMistakes = false;
 let mistakes = [];
+let correctCount = 0;
+let incorrectCount = 0;
+let answered = false; // Variable de estado para controlar el flujo
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -36,11 +39,17 @@ function showProgress() {
 }
 
 function showQuestion() {
+  answered = false; // Resetear estado al mostrar nueva pregunta
   const q = questions[currentQuestion];
   const isMultiple = q.correct.length > 1;
   let html = `
-    <div class="mb-2 text-sm text-gray-600">
-      Pregunta ${currentQuestion + 1} de ${questions.length}
+    <div class="mb-2 text-sm text-gray-600 flex justify-between">
+      <span>Pregunta ${currentQuestion + 1} de ${questions.length}</span>
+      <span>
+        <span class="text-green-600 font-bold">✓ ${correctCount}</span>
+        <span class="mx-1">|</span>
+        <span class="text-red-600 font-bold">✗ ${incorrectCount}</span>
+      </span>
     </div>
     ${showProgress()}
     <div class="mb-4 text-lg font-semibold">${q.question}</div>
@@ -96,9 +105,18 @@ function checkAnswer() {
   const user = selected.slice().sort().join(',');
   let feedback = '';
   let showExpBtn = '';
+  const wasCorrect = q.answeredCorrectly || false;
+
   if (correct === user) {
     feedback = `<span class="text-green-600 font-bold">¡Correcto!</span>`;
-    if (!q.answeredCorrectly) { score++; q.answeredCorrectly = true; }
+    if (!wasCorrect) { 
+      score++; 
+      correctCount++;
+      if (mistakes.includes(currentQuestion)) {
+        mistakes = mistakes.filter(idx => idx !== currentQuestion);
+      }
+    }
+    q.answeredCorrectly = true;
   } else {
     feedback = `<span class="text-red-600 font-bold">Incorrecto.</span> <br>
       <span class="text-gray-700">Respuesta correcta: <b>${q.correct.join(', ')}</b></span>`;
@@ -109,8 +127,15 @@ function checkAnswer() {
       >Ver explicación</button>
       <div id="exp-div" class="mt-2 text-sm text-gray-700 bg-blue-50 rounded p-2 border border-blue-200 hidden">${q.explanation || ''}</div>
     `;
-    if (q.answeredCorrectly) { score--; q.answeredCorrectly = false; }
+    if (wasCorrect) { 
+      score--; 
+      correctCount--;
+    }
+    if (!q.answeredCorrectly) {
+      incorrectCount++;
+    }
     if (!mistakes.includes(currentQuestion)) mistakes.push(currentQuestion);
+    q.answeredCorrectly = false;
   }
   document.getElementById('feedback').innerHTML = feedback + showExpBtn;
   document.querySelectorAll('input[name="option"]').forEach(el => el.disabled = true);
@@ -126,16 +151,17 @@ function checkAnswer() {
 }
 
 function nextHandler() {
-  if (!document.getElementById('feedback').innerHTML) {
+  if (!answered) {
     checkAnswer();
-    document.getElementById('next-btn').textContent = currentQuestion === questions.length - 1 ? 'Ver resultado' : 'Siguiente pregunta';
-    return;
-  }
-  if (currentQuestion < questions.length - 1) {
-    currentQuestion++;
-    showQuestion();
+    answered = true;
+    document.getElementById('next-btn').textContent = currentQuestion === questions.length - 1 ? 'Ver resultado' : 'Continuar';
   } else {
-    showScore();
+    if (currentQuestion < questions.length - 1) {
+      currentQuestion++;
+      showQuestion();
+    } else {
+      showScore();
+    }
   }
 }
 
@@ -160,7 +186,11 @@ function showScore() {
   }
   document.getElementById('score-section').innerHTML = `
     <div class="text-2xl font-bold mb-2">¡Test finalizado!</div>
-    <div class="text-lg">Puntuación: <span class="font-bold">${score}</span> de ${questions.length}</div>
+    <div class="text-lg">
+      Puntuación: <span class="font-bold">${score}</span> de ${questions.length}<br>
+      <span class="text-green-600 font-bold">✓ Correctas: ${correctCount}</span><br>
+      <span class="text-red-600 font-bold">✗ Incorrectas: ${incorrectCount}</span>
+    </div>
     ${reviewBtn}
     <button onclick="location.reload()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 ml-2">Repetir test</button>
   `;
@@ -170,6 +200,8 @@ function showScore() {
       questions = mistakes.map(idx => questions[idx]);
       currentQuestion = 0;
       score = 0;
+      correctCount = 0;
+      incorrectCount = 0;
       userAnswers = [];
       mistakes = [];
       document.getElementById('score-section').classList.add('hidden');
