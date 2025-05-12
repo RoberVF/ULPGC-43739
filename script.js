@@ -37,6 +37,7 @@ function showProgress() {
 
 function showQuestion() {
   const q = questions[currentQuestion];
+  const isMultiple = q.correct.length > 1;
   let html = `
     <div class="mb-2 text-sm text-gray-600">
       Pregunta ${currentQuestion + 1} de ${questions.length}
@@ -44,12 +45,12 @@ function showQuestion() {
     ${showProgress()}
     <div class="mb-4 text-lg font-semibold">${q.question}</div>
   `;
-  html += '<form id="options-form" class="space-y-2">';
+  html += `<form id="options-form" class="space-y-2">`;
   q.options.forEach((opt, idx) => {
     const letter = String.fromCharCode(97 + idx);
     html += `
       <label class="flex items-center space-x-2 cursor-pointer">
-        <input type="checkbox" name="option" value="${letter}" class="form-checkbox h-5 w-5 text-blue-600">
+        <input type="${isMultiple ? 'checkbox' : 'radio'}" name="option" value="${letter}" class="${isMultiple ? 'form-checkbox' : 'form-radio'} h-5 w-5 text-blue-600">
         <span>${letter}) ${opt}</span>
       </label>
     `;
@@ -60,11 +61,17 @@ function showQuestion() {
   document.getElementById('prev-btn').disabled = currentQuestion === 0;
   document.getElementById('next-btn').textContent = currentQuestion === questions.length - 1 ? 'Finalizar' : 'Siguiente';
   document.getElementById('next-btn').disabled = true;
+
   document.querySelectorAll('input[name="option"]').forEach(input => {
     input.addEventListener('change', () => {
-      document.getElementById('next-btn').disabled = !document.querySelectorAll('input[name="option"]:checked').length;
+      if (isMultiple) {
+        document.getElementById('next-btn').disabled = !document.querySelectorAll('input[name="option"]:checked').length;
+      } else {
+        document.getElementById('next-btn').disabled = !document.querySelector('input[name="option"]:checked');
+      }
     });
   });
+
   if (userAnswers[currentQuestion]) {
     userAnswers[currentQuestion].forEach(val => {
       const el = document.querySelector(`input[name="option"][value="${val}"]`);
@@ -76,7 +83,14 @@ function showQuestion() {
 
 function checkAnswer() {
   const q = questions[currentQuestion];
-  const selected = Array.from(document.querySelectorAll('input[name="option"]:checked')).map(el => el.value);
+  const isMultiple = q.correct.length > 1;
+  let selected = [];
+  if (isMultiple) {
+    selected = Array.from(document.querySelectorAll('input[name="option"]:checked')).map(el => el.value);
+  } else {
+    const checked = document.querySelector('input[name="option"]:checked');
+    if (checked) selected = [checked.value];
+  }
   userAnswers[currentQuestion] = selected;
   const correct = q.correct.slice().sort().join(',');
   const user = selected.slice().sort().join(',');
@@ -88,8 +102,13 @@ function checkAnswer() {
   } else {
     feedback = `<span class="text-red-600 font-bold">Incorrecto.</span> <br>
       <span class="text-gray-700">Respuesta correcta: <b>${q.correct.join(', ')}</b></span>`;
-    showExpBtn = `<button id="show-exp" class="ml-2 text-blue-600 underline text-sm">Ver explicación</button>
-      <div id="exp-div" class="mt-2 text-sm text-gray-600 hidden">${q.explanation || ''}</div>`;
+    showExpBtn = `
+      <button id="show-exp"
+        class="ml-2 mt-2 px-3 py-1 bg-blue-100 text-blue-700 rounded border border-blue-400 hover:bg-blue-200 transition"
+        style="display:inline-block"
+      >Ver explicación</button>
+      <div id="exp-div" class="mt-2 text-sm text-gray-700 bg-blue-50 rounded p-2 border border-blue-200 hidden">${q.explanation || ''}</div>
+    `;
     if (q.answeredCorrectly) { score--; q.answeredCorrectly = false; }
     if (!mistakes.includes(currentQuestion)) mistakes.push(currentQuestion);
   }
@@ -100,6 +119,8 @@ function checkAnswer() {
       e.preventDefault();
       document.getElementById('exp-div').classList.toggle('hidden');
       this.textContent = document.getElementById('exp-div').classList.contains('hidden') ? 'Ver explicación' : 'Ocultar explicación';
+      this.classList.toggle('bg-blue-200');
+      this.classList.toggle('bg-blue-100');
     };
   }
 }
