@@ -20,12 +20,6 @@ async function loadQuestions() {
   const data = await res.json();
   questions = data.questions;
   shuffle(questions);
-  questions.forEach(q => {
-    let optionPairs = q.options.map((opt, idx) => [opt, String.fromCharCode(97 + idx)]);
-    shuffle(optionPairs);
-    q.options = optionPairs.map(pair => pair[0]);
-    q.optionMap = optionPairs.map(pair => pair[1]);
-  });
   showQuestion();
 }
 
