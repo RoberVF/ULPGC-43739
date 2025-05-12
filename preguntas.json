@@ -1,0 +1,1128 @@
+{
+  "questions": [
+    {
+      "question": "¿Cuántos hilos de información puede manejar cada núcleo con la tecnología HT (Hyper-Threading)?",
+      "options": [
+        "Uno",
+        "Dos",
+        "Cuatro",
+        "Ocho"
+      ],
+      "correct": ["b"],
+      "explanation": "Hyper-Threading permite que cada núcleo físico gestione dos hilos de ejecución simultáneamente."
+    },
+    {
+      "question": "¿Cuáles de estos elementos forman parte del sistema de procesamiento en un Sistema de Información?",
+      "options": [
+        "Placa base",
+        "Microprocesador",
+        "Pendrive",
+        "Carcasa",
+        "Memoria RAM"
+      ],
+      "correct": ["a", "b", "e"],
+      "explanation": "El sistema de procesamiento incluye placa base, microprocesador y memoria RAM."
+    },
+    {
+      "question": "¿Cuál de estos elementos no forman parte del hardware?",
+      "options": [
+        "RAM",
+        "BIOS",
+        "USB",
+        "Teclado",
+        "Todas forman partes del hardware"
+      ],
+      "correct": ["e"],
+      "explanation": "Todos los elementos mencionados son hardware."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones son ciertas acerca de SATA?",
+      "options": [
+        "Es más lento que P-ATA",
+        "Proporciona mayores velocidades",
+        "Permite insertar un dispositivo sin tener que apagar el ordenador",
+        "No sustituye a P-ATA",
+        "Sustituye al tradicional P-ATA"
+      ],
+      "correct": ["b", "c", "e"],
+      "explanation": "SATA es más rápido que P-ATA, permite hot swap y reemplazó a P-ATA."
+    },
+    {
+      "question": "¿Qué elementos componen un sistema de información?",
+      "options": [
+        "Usuarios y datos",
+        "Equipos y procedimientos",
+        "Procedimientos y datos",
+        "Información, procedimientos, usuarios y equipos de soporte"
+      ],
+      "correct": ["d"],
+      "explanation": "Un sistema de información incluye datos, procedimientos, usuarios y equipos."
+    },
+    {
+      "question": "Sobre un sistema de información, seleccione la opción correcta:",
+      "options": [
+        "Es un conjunto de elementos orientados al tratamiento y administración de datos e información.",
+        "Permite la administración y gestión de datos.",
+        "Todas las opciones son correctas",
+        "Incluye hardware, software, datos y personal."
+      ],
+      "correct": ["c"],
+      "explanation": "Todas las afirmaciones definen correctamente un sistema de información."
+    },
+    {
+      "question": "¿Cuál de los siguientes no es un SO para móviles?",
+      "options": [
+        "Android",
+        "Microsoft Windows",
+        "iOS",
+        "HarmonyOS"
+      ],
+      "correct": ["b"],
+      "explanation": "Windows tradicional es un SO de escritorio, no móvil."
+    },
+    {
+      "question": "¿Cuál de los siguientes componentes está conectado directamente a la placa base de un ordenador?",
+      "options": [
+        "RAM",
+        "ROM",
+        "Ranuras de expansión",
+        "Controladora de disco duro",
+        "Todas son correctas"
+      ],
+      "correct": ["e"],
+      "explanation": "Todos los componentes se conectan directamente a la placa base."
+    },
+    {
+      "question": "¿Cuáles de estas afirmaciones son correctas?",
+      "options": [
+        "La ROM no se borra al apagar el ordenador",
+        "La RAM no se borra al apagar el ordenador",
+        "La RAM es memoria no volátil",
+        "La ROM es memoria volátil"
+      ],
+      "correct": ["a"],
+      "explanation": "La ROM es memoria no volátil, la RAM sí se borra al apagar el equipo."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones sobre los sistemas de información (SI) es correcta?",
+      "options": [
+        "Un SI solo incluye hardware y software.",
+        "Un SI es únicamente una base de datos.",
+        "Un SI es un conjunto de elementos orientados al tratamiento y administración de datos e información, organizados y listos para su uso posterior.",
+        "Un SI es solo para almacenar información."
+      ],
+      "correct": ["c"],
+      "explanation": "Un SI incluye hardware, software, datos y personal, organizados y listos para su uso."
+    },
+        {
+      "question": "¿Cuál es la función principal de las ranuras de expansión en un ordenador?",
+      "options": [
+        "Almacenar información temporalmente",
+        "Conectar la parte principal del ordenador con dispositivos adicionales",
+        "Mejorar la velocidad del procesador",
+        "Aumentar la capacidad del disco duro"
+      ],
+      "correct": ["b"],
+      "explanation": "Las ranuras de expansión permiten añadir tarjetas como gráficas, de red, etc."
+    },
+    {
+      "question": "¿Qué es Cloud Computing?",
+      "options": [
+        "Es un conjunto de recursos computacionales y almacenamiento que puede crecer, bajo demanda del usuario, de forma ilimitada, pagando por su uso.",
+        "Es un sistema operativo en la nube.",
+        "Es una red local de ordenadores.",
+        "Es un tipo de hardware especializado."
+      ],
+      "correct": ["a"],
+      "explanation": "Cloud Computing es escalable y de pago por uso."
+    },
+    {
+      "question": "¿Qué relación hay entre el Cloud Computing y la Virtualización?",
+      "options": [
+        "Solo comparten hardware.",
+        "Solo comparten software.",
+        "Compartir recursos, elasticidad, la monitorización y pago por su uso.",
+        "No tienen relación."
+      ],
+      "correct": ["c"],
+      "explanation": "Ambas tecnologías facilitan el uso eficiente de recursos."
+    },
+    {
+      "question": "¿Qué afirmaciones son correctas acerca del tipo 'Non-hosted' de hypervisor o VMM?",
+      "options": [
+        "Más eficiente",
+        "Aislamiento entre VM",
+        "Menos robusto",
+        "Depende de un sistema operativo anfitrión",
+        "Robustez"
+      ],
+      "correct": ["a", "b", "e"],
+      "explanation": "Los hypervisores de tipo 1 (bare-metal) son más eficientes y robustos, y aíslan mejor las máquinas virtuales."
+    },
+    {
+      "question": "Principales tipos de virtualización:",
+      "options": [
+        "Emulación, virtualización nativa, virtualización asistida por hardware, paravirtualización, virtualización a nivel de SO",
+        "Solo virtualización nativa",
+        "Solo paravirtualización",
+        "Solo virtualización a nivel de SO"
+      ],
+      "correct": ["a"],
+      "explanation": "Son los principales tipos de virtualización."
+    },
+    {
+      "question": "Seleccione la o las definiciones correctas sobre emulación:",
+      "options": [
+        "Es hardware que simula otro hardware.",
+        "Es un programa software que simula la funcionalidad de otro programa o replica la arquitectura hardware al completo.",
+        "Software que permite simular las condiciones originales, es decir, quien lo verifica está en un ambiente falso, pero podrá sentir que es una experiencia 100% real.",
+        "Es una técnica exclusiva de sistemas operativos."
+      ],
+      "correct": ["b", "c"],
+      "explanation": "La emulación simula completamente otro sistema."
+    },
+    {
+      "question": "¿Qué tipo de virtualización se emplea en VirtualBox?",
+      "options": [
+        "Paravirtualización",
+        "Emulación",
+        "Virtualización nativa",
+        "Virtualización a nivel de SO"
+      ],
+      "correct": ["c"],
+      "explanation": "VirtualBox es un hypervisor de tipo 2, pero emplea virtualización nativa asistida por hardware."
+    },
+    {
+      "question": "¿Cuál de las siguientes opciones corresponde a IaaS?",
+      "options": [
+        "Cloud Software as a Service (SaaS)",
+        "Cloud Platform as a Service (PaaS)",
+        "Cloud Infrastructure as a Service (IaaS)",
+        "Cloud Storage as a Service (StaaS)"
+      ],
+      "correct": ["c"],
+      "explanation": "IaaS ofrece recursos fundamentales como procesamiento, almacenamiento y redes."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones describe mejor el Software como Servicio (SaaS)?",
+      "options": [
+        "El SaaS permite a los usuarios acceder y utilizar software a través de internet sin necesidad de descargarlo en sus dispositivos.",
+        "El SaaS requiere instalación local en cada equipo.",
+        "El SaaS es exclusivo para empresas grandes.",
+        "El SaaS solo funciona en sistemas operativos Windows."
+      ],
+      "correct": ["a"],
+      "explanation": "SaaS es software accesible vía web, sin instalación local."
+    },
+    {
+      "question": "¿Qué tecnología permite crear múltiples procesos, memorias y almacenamiento con un comportamiento igual al real?",
+      "options": [
+        "Emulación",
+        "Virtualización",
+        "Paravirtualización",
+        "Contenedores"
+      ],
+      "correct": ["a"],
+      "explanation": "La emulación simula completamente el hardware y el software."
+    },
+        {
+      "question": "¿Cuáles son propiedades de la Nube?",
+      "options": [
+        "Gran Escala",
+        "Bajo demanda",
+        "Poca disponibilidad",
+        "Escalabilidad limitada",
+        "Gran almacenamiento"
+      ],
+      "correct": ["a", "b", "e"],
+      "explanation": "La nube es escalable, bajo demanda y con gran capacidad."
+    },
+    {
+      "question": "¿Cuál sí son característica de un hypervisor del tipo hosted?",
+      "options": [
+        "Necesita modificar el sistema operativo invitado.",
+        "No se necesita modificar el sistema operativo.",
+        "Proporciona aislamiento entre máquinas virtuales.",
+        "Requiere una capa adicional de software para funcionar.",
+        "Solo funciona en hardware dedicado."
+      ],
+      "correct": ["b", "c", "d"],
+      "explanation": "Los hypervisores hosted funcionan sobre un sistema operativo anfitrión."
+    },
+    {
+      "question": "¿Cuál de las siguientes afirmaciones describe mejor a Active Directory?",
+      "options": [
+        "Es un sistema operativo de Microsoft.",
+        "Es una base de datos jerárquica y distribuida que almacena objetos como usuarios, grupos y equipos, necesarios para la gestión de recursos de red.",
+        "Es una aplicación de gestión de bases de datos relacionales.",
+        "Es un sistema de archivos distribuido."
+      ],
+      "correct": ["b"],
+      "explanation": "Active Directory es un servicio de directorio para gestionar recursos de red."
+    },
+    {
+      "question": "¿Qué es un árbol?",
+      "options": [
+        "Es una colección de dominios que depende de una raíz común y se encuentra organizada jerárquicamente.",
+        "Es una colección de usuarios.",
+        "Es un grupo de equipos.",
+        "Es una unidad organizativa."
+      ],
+      "correct": ["a"],
+      "explanation": "En Active Directory, un árbol es un conjunto de dominios jerárquicos."
+    },
+    {
+      "question": "En Active Directory de Windows (AD), ¿cuáles de los siguientes componentes son lógicos?",
+      "options": [
+        "Controladores de dominio",
+        "Sitios",
+        "Subredes",
+        "Dominios, bosques, árboles y unidades organizativas"
+      ],
+      "correct": ["d"],
+      "explanation": "Son componentes lógicos de la estructura de AD."
+    },
+    {
+      "question": "Componentes físicos del Active Directory de Windows:",
+      "options": [
+        "Dominios",
+        "Bosques",
+        "Controladores de dominio, sitios y subredes",
+        "Unidades organizativas"
+      ],
+      "correct": ["c"],
+      "explanation": "Son los componentes físicos de AD."
+    },
+    {
+      "question": "Sobre el árbol en Active Directory:",
+      "options": [
+        "Un árbol es una colección de dominios que comparten un espacio de nombres contiguo.",
+        "Los dominios de un árbol están conectados por relaciones de confianza.",
+        "Un árbol puede formar parte de un bosque.",
+        "Todas las respuestas son correctas."
+      ],
+      "correct": ["d"],
+      "explanation": "Todas las afirmaciones sobre el árbol son correctas."
+    },
+    {
+      "question": "¿Cuál es la función principal de un directorio en una red de ordenadores?",
+      "options": [
+        "Almacenar información sobre los recursos de la red.",
+        "Organizar los recursos de la red.",
+        "Facilitar el acceso a los recursos de la red.",
+        "Todas las anteriores."
+      ],
+      "correct": ["d"],
+      "explanation": "Un directorio almacena, organiza y facilita el acceso a recursos de red."
+    },
+    {
+      "question": "Ventajas de la virtualización:",
+      "options": [
+        "Aislamiento",
+        "Complejidad",
+        "Alta disponibilidad",
+        "Mejoras operacionales",
+        "Copias de seguridad"
+      ],
+      "correct": ["a", "c", "d", "e"],
+      "explanation": "La virtualización facilita estas ventajas."
+    },
+    {
+      "question": "¿Cuál describe mejor el control de dominio en redes informáticas?",
+      "options": [
+        "Es un sistema operativo especializado.",
+        "Es una base de datos relacional.",
+        "El control de dominio es un servicio que centraliza la administración de usuarios, contraseñas y recursos en una red.",
+        "Es una aplicación de gestión de archivos."
+      ],
+      "correct": ["c"],
+      "explanation": "El controlador de dominio centraliza la gestión de usuarios y recursos."
+    },
+        {
+      "question": "¿Qué es un directorio en una red de ordenadores?",
+      "options": [
+        "Un sistema que almacena información sobre los recursos de la red.",
+        "Un dispositivo físico de almacenamiento.",
+        "Un protocolo de comunicación.",
+        "Un tipo de conexión de red."
+      ],
+      "correct": ["a"],
+      "explanation": "Un directorio almacena información sobre recursos de red."
+    },
+    {
+      "question": "¿Cuáles de los siguientes elementos de AD son componentes físicos?",
+      "options": [
+        "Controladores de dominio",
+        "Dominios",
+        "Sitios",
+        "Subredes"
+      ],
+      "correct": ["a", "c", "d"],
+      "explanation": "Son los elementos físicos de Active Directory."
+    },
+    {
+      "question": "¿Qué tipo de información se almacena en un controlador de dominio?",
+      "options": [
+        "La partición de directorios de dominio.",
+        "Configuración de hardware.",
+        "La partición del directorio de configuración.",
+        "Particiones de directorio de aplicaciones."
+      ],
+      "correct": ["a", "c", "d"],
+      "explanation": "El controlador de dominio almacena estas particiones."
+    },
+    {
+      "question": "¿Qué permisos se pueden establecer sobre un archivo/directorio en Linux?",
+      "options": [
+        "solo lectura",
+        "solo escritura",
+        "lectura(r), escritura(w) y ejecución(x)",
+        "solo ejecución"
+      ],
+      "correct": ["c"],
+      "explanation": "Son los tres permisos básicos en Linux."
+    },
+    {
+      "question": "¿Cuáles de los siguientes comandos se utilizan en Linux para la gestión de usuarios?",
+      "options": [
+        "adduser y passwd",
+        "ls y cd",
+        "mkdir y rm",
+        "ps y top"
+      ],
+      "correct": ["a"],
+      "explanation": "Estos comandos permiten crear usuarios y cambiar contraseñas."
+    },
+    {
+      "question": "Tipos de cuentas de grupo (ámbitos) en Windows:",
+      "options": [
+        "Ámbito local y global",
+        "Ámbito universal y local",
+        "Ámbito global y universal",
+        "Ámbito local, ámbito universal y ámbito global"
+      ],
+      "correct": ["d"],
+      "explanation": "Son los tres ámbitos de grupo en Windows."
+    },
+    {
+      "question": "Si ejecuto: sudo chmod u+rw archivo.txt, ¿qué permisos estoy habilitando y a quién?",
+      "options": [
+        "Al usuario y son permisos de lectura y escritura",
+        "Al grupo y son permisos de lectura y escritura",
+        "A otros y son permisos de lectura y escritura",
+        "Al usuario y son permisos de ejecución"
+      ],
+      "correct": ["a"],
+      "explanation": "\"u\" es usuario, \"rw\" es lectura y escritura."
+    },
+    {
+      "question": "Permiso en modo absoluto:",
+      "options": [
+        "Consiste en utilizar letras para los permisos.",
+        "Es útil para cambiar muchos permisos. Consiste en utilizar valores numéricos.",
+        "Solo se puede usar con archivos.",
+        "Solo se puede usar con carpetas."
+      ],
+      "correct": ["b"],
+      "explanation": "El modo absoluto usa números para establecer permisos."
+    },
+    {
+      "question": "¿Para qué son los permisos en un sistema de gestión de archivos?",
+      "options": [
+        "Delimitar el acceso de los usuarios a los archivos y carpetas del sistema.",
+        "Mejorar la velocidad del sistema.",
+        "Reducir el tamaño de los archivos.",
+        "Aumentar la capacidad del disco duro."
+      ],
+      "correct": ["a"],
+      "explanation": "Los permisos controlan el acceso a los archivos."
+    },
+    {
+      "question": "¿Cuál describe mejor el archivo /etc/shadow en Linux?",
+      "options": [
+        "Contiene nombres de usuario",
+        "El archivo /etc/shadow contiene información sobre usuarios y sus contraseñas cifradas.",
+        "Guarda configuraciones del sistema",
+        "Registra eventos del kernel"
+      ],
+      "correct": ["b"],
+      "explanation": "/etc/shadow almacena las contraseñas cifradas de los usuarios."
+    },
+        {
+      "question": "¿Cuál es correcta sobre la gestión de usuarios y grupos en sistemas operativos?",
+      "options": [
+        "El usuario con más privilegios en sistemas operativos Linux es conocido como 'Administrador'.",
+        "El usuario con más privilegios en sistemas operativos Windows es conocido como 'Administrador’.",
+        "En ambos sistemas, el usuario principal se llama 'root'.",
+        "No existen diferencias en la gestión de usuarios entre Windows y Linux."
+      ],
+      "correct": ["b"],
+      "explanation": "El usuario Administrador tiene los máximos privilegios en Windows."
+    },
+    {
+      "question": "En cuanto a la gestión de grupos en Linux, ¿qué orden se usa para asignar o cambiar la clave de un grupo?",
+      "options": [
+        "groupadd",
+        "passwd",
+        "gpasswd",
+        "usermod"
+      ],
+      "correct": ["c"],
+      "explanation": "gpasswd permite cambiar la contraseña de un grupo."
+    },
+    {
+      "question": "¿Responsabilidades del administrador de un servidor?",
+      "options": [
+        "Gestionar usuarios",
+        "Gestionar grupos",
+        "Gestionar contraseñas",
+        "Gestionar configuraciones",
+        "Todas las anteriores"
+      ],
+      "correct": ["e"],
+      "explanation": "El administrador gestiona usuarios, grupos, contraseñas y configuraciones."
+    },
+    {
+      "question": "¿Cuántas divisiones principales permiten las particiones primarias en un disco duro?",
+      "options": [
+        "2",
+        "3",
+        "5",
+        "4"
+      ],
+      "correct": ["d"],
+      "explanation": "Un disco duro MBR permite hasta 4 particiones primarias."
+    },
+    {
+      "question": "¿Cuáles son correctas sobre la gestión de archivos?",
+      "options": [
+        "La ruta de un archivo expresa la ubicación exacta donde se encuentra el archivo o directorio.",
+        "La forma de escribir la ruta puede ser absoluta o relativa.",
+        "La ruta siempre debe ser absoluta.",
+        "La ruta solo se usa en sistemas Linux."
+      ],
+      "correct": ["a", "b"],
+      "explanation": "Las rutas pueden ser absolutas o relativas y expresan la ubicación exacta."
+    },
+    {
+      "question": "Tamaño máximo que podía direccionar los primeros sistemas de ficheros FAT de Windows:",
+      "options": [
+        "2GB",
+        "4GB",
+        "8GB",
+        "16GB"
+      ],
+      "correct": ["a"],
+      "explanation": "FAT16 tenía un límite de 2GB."
+    },
+    {
+      "question": "¿Cuáles de los siguientes sistemas de archivos son de la familia Microsoft?",
+      "options": [
+        "FAT, FAT32 y NTFS",
+        "EXT2 y EXT3",
+        "XFS y JFS",
+        "ReiserFS y Btrfs"
+      ],
+      "correct": ["a"],
+      "explanation": "Son sistemas de archivos desarrollados por Microsoft."
+    },
+    {
+      "question": "Tipos de particiones:",
+      "options": [
+        "Primarias, son las divisiones principales de un disco duro.",
+        "Extendidas, fueron creadas para el límite de particiones primarias.",
+        "Lógicas, ocupan una porción o la totalidad de una partición primaria.",
+        "Solo existen las particiones primarias."
+      ],
+      "correct": ["a", "b", "c"],
+      "explanation": "Son los tipos de particiones más comunes."
+    },
+    {
+      "question": "¿Qué es la partición de un disco duro?",
+      "options": [
+        "El proceso de dividir físicamente el espacio de almacenamiento en secciones separadas y distintas.",
+        "El proceso de copiar archivos entre discos.",
+        "El proceso de formatear el disco duro.",
+        "El proceso de instalar un sistema operativo."
+      ],
+      "correct": ["a"],
+      "explanation": "Particionar es dividir el disco en secciones independientes."
+    },
+    {
+      "question": "¿Diferencia entre archivos y carpetas?",
+      "options": [
+        "Un archivo es un elemento básico que almacena datos, mientras que una carpeta es un contenedor que agrupa varios archivos relacionados.",
+        "Ambos son lo mismo.",
+        "Una carpeta es un archivo ejecutable.",
+        "Un archivo solo puede contener imágenes."
+      ],
+      "correct": ["a"],
+      "explanation": "Las carpetas agrupan archivos."
+    },
+        {
+      "question": "¿Qué sistema de archivos introducido con Windows NT incluye un sistema de auto-recuperación y permite establecer cuotas de ocupación?",
+      "options": [
+        "FAT",
+        "FAT32",
+        "NTFS",
+        "EXT4"
+      ],
+      "correct": ["c"],
+      "explanation": "NTFS tiene journaling y cuotas de disco."
+    },
+    {
+      "question": "¿Extensiones de discos virtuales?",
+      "options": [
+        "vdi",
+        "vhd",
+        "iso",
+        "vmdk"
+      ],
+      "correct": ["a", "b", "d"],
+      "explanation": "Son formatos de discos virtuales usados por VirtualBox, Hyper-V y VMware."
+    },
+    {
+      "question": "¿Tipos de particiones comunes en un disco duro?",
+      "options": [
+        "Particiones primarias.",
+        "Particiones extendidas.",
+        "Particiones lógicas.",
+        "Particiones de arranque."
+      ],
+      "correct": ["a", "b", "c"],
+      "explanation": "Son las particiones más habituales."
+    },
+    {
+      "question": "¿Diferencia fundamental entre un disco duro SSD y un HDD?",
+      "options": [
+        "Un SSD utiliza circuitos integrados de memoria flash para almacenar datos, mientras que un HDD utiliza discos magnéticos giratorios y cabezales de lectura/escritura.",
+        "Un SSD es más grande físicamente que un HDD.",
+        "Un HDD es más rápido que un SSD.",
+        "No existe diferencia entre ambos."
+      ],
+      "correct": ["a"],
+      "explanation": "SSD = memoria flash; HDD = discos magnéticos."
+    },
+    {
+      "question": "¿RAID que proporciona redundancia mediante el almacenamiento de la misma información en dos discos?",
+      "options": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 10"
+      ],
+      "correct": ["b"],
+      "explanation": "RAID 1 es espejado (mirroring)."
+    },
+    {
+      "question": "¿Qué significa SSD y HDD?",
+      "options": [
+        "Solid State Drive y Hard Disk Drive",
+        "Secure Storage Device y Hard Drive Disk",
+        "System Storage Device y Hybrid Disk Drive",
+        "Synchronous Storage Device y Hard Disk Device"
+      ],
+      "correct": ["a"],
+      "explanation": "SSD = disco de estado sólido, HDD = disco duro tradicional."
+    },
+    {
+      "question": "¿Tipos de discos duros?",
+      "options": [
+        "HDD y SSD",
+        "SATA y IDE",
+        "NVMe y SCSI",
+        "USB y FireWire"
+      ],
+      "correct": ["a"],
+      "explanation": "Son los dos tipos principales."
+    },
+    {
+      "question": "Opciones correctas sobre NAS:",
+      "options": [
+        "NAS es un servidor de archivos en red.",
+        "NAS es seguro.",
+        "NAS es escalable.",
+        "Todas las opciones son correctas."
+      ],
+      "correct": ["d"],
+      "explanation": "NAS es un servidor de archivos en red, seguro y escalable."
+    },
+    {
+      "question": "Políticas correctas de copias de seguridad:",
+      "options": [
+        "Planificar las copias de seguridad.",
+        "Realizarlas regularmente.",
+        "No afectar a los usuarios.",
+        "Todas son correctas."
+      ],
+      "correct": ["d"],
+      "explanation": "Es importante planificar, realizar regularmente y no afectar a los usuarios."
+    },
+    {
+      "question": "¿Proceso de restauración de un sistema?",
+      "options": [
+        "Identificar el problema.",
+        "Seleccionar la copia adecuada.",
+        "Restaurar los datos.",
+        "Verificar la restauración.",
+        "Todas las anteriores son correctas."
+      ],
+      "correct": ["e"],
+      "explanation": "Todas son fases del proceso de restauración."
+    },
+        {
+      "question": "¿Afirmación correcta sobre dispositivos de almacenamiento?",
+      "options": [
+        "Las cintas son el dispositivo más habitual en servidores y suelen ser SCSI.",
+        "Los discos duros son los únicos dispositivos de almacenamiento.",
+        "Las memorias USB no se usan en servidores.",
+        "Los discos SSD no existen en servidores."
+      ],
+      "correct": ["a"],
+      "explanation": "Las cintas SCSI son comunes en servidores para copias de seguridad."
+    },
+    {
+      "question": "¿Característica del RAID 3?",
+      "options": [
+        "Los datos se dividen a nivel de bytes en todas las unidades excepto una, que es la unidad de paridad.",
+        "No ofrece redundancia.",
+        "Sólo utiliza dos discos.",
+        "No utiliza paridad."
+      ],
+      "correct": ["a"],
+      "explanation": "RAID 3 usa striping a nivel de byte y una unidad de paridad."
+    },
+    {
+      "question": "¿Afirmaciones incorrectas sobre Samba?",
+      "options": [
+        "Samba es un conjunto de programas que permite la interoperabilidad entre sistemas operativos macOS y Linux.",
+        "Samba es para compartir archivos e impresoras entre Windows y Linux.",
+        "Samba permite compartir recursos entre sistemas UNIX y Windows.",
+        "Samba es exclusivamente para sistemas operativos UNIX/Linux."
+      ],
+      "correct": ["a", "d"],
+      "explanation": "Samba es para interoperar entre Windows y sistemas UNIX/Linux."
+    },
+    {
+      "question": "¿Samba en el contexto de los sistemas operativos?",
+      "options": [
+        "Samba es un conjunto de programas que permiten la interoperabilidad entre sistemas operativos Windows y Linux.",
+        "Samba es un antivirus para Windows.",
+        "Samba es un sistema de archivos para Linux.",
+        "Samba es un gestor de bases de datos."
+      ],
+      "correct": ["a"],
+      "explanation": "Permite compartir archivos e impresoras entre ambos sistemas."
+    },
+    {
+      "question": "¿En una máquina qué se puede compartir?",
+      "options": [
+        "Capacidad de procesamiento",
+        "Archivos",
+        "Directorios",
+        "Periféricos de entrada/salida",
+        "Todas las anteriores"
+      ],
+      "correct": ["e"],
+      "explanation": "Se pueden compartir múltiples recursos."
+    },
+    {
+      "question": "¿Crear un recurso compartido oculto en Windows?",
+      "options": [
+        "Hay que llamarlo con el prefijo _hidden.",
+        "Hay que llamarlo con el sufijo _oculto.",
+        "Hay que llamarlo con el prefijo $",
+        "Hay que llamar al recurso con un nombre acabado con el símbolo $"
+      ],
+      "correct": ["d"],
+      "explanation": "El símbolo $ oculta el recurso en la red."
+    },
+    {
+      "question": "¿Impresora en Windows puede conectarse de manera...?",
+      "options": [
+        "Local",
+        "En red",
+        "Como servidor central",
+        "Todas las anteriores"
+      ],
+      "correct": ["d"],
+      "explanation": "Puede ser local, en red o como servidor central."
+    },
+    {
+      "question": "¿Opciones que definen mejor el uso del grupo de trabajo en Windows?",
+      "options": [
+        "Compartir archivos",
+        "Gestionar impresoras",
+        "Compartir Internet",
+        "Organizar computadoras"
+      ],
+      "correct": ["a", "b", "d"],
+      "explanation": "El grupo de trabajo es para compartir y organizar recursos."
+    },
+    {
+      "question": "¿Protocolo responsable del ataque WannaCry v1?",
+      "options": [
+        "FTP",
+        "HTTP",
+        "SMB (Session Message Block)",
+        "SMTP"
+      ],
+      "correct": ["c"],
+      "explanation": "El ataque explotó vulnerabilidades en SMB."
+    },
+    {
+      "question": "¿Afirmación correcta sobre seguridad informática?",
+      "options": [
+        "La confidencialidad de la información se refiere a que solo puede ser leída por usuarios autorizados.",
+        "La disponibilidad de la información se refiere a que siempre está accesible para cualquier usuario.",
+        "La integridad de la información se refiere a que solo puede ser modificada por usuarios autorizados.",
+        "La autenticidad de la información se refiere a que siempre es verdadera."
+      ],
+      "correct": ["c"],
+      "explanation": "Integridad = solo usuarios autorizados pueden modificar la información."
+    },
+        {
+      "question": "¿Medida para protegerse contra el ataque de 'Spoofing'?",
+      "options": [
+        "Encriptado de datos",
+        "Actualizar el software",
+        "Filtrado de paquetes",
+        "Deshabilitar el firewall",
+        "Encriptado de protocolos"
+      ],
+      "correct": ["a", "b", "c", "e"],
+      "explanation": "Todas ayudan a prevenir el spoofing."
+    },
+    {
+      "question": "¿Componentes clave de una política de seguridad de empresa?",
+      "options": [
+        "Establecer responsabilidades",
+        "Definir reglas y procedimientos",
+        "Determinar qué proteger",
+        "Todas las opciones son correctas."
+      ],
+      "correct": ["d"],
+      "explanation": "Una política debe establecer responsabilidades, reglas y qué proteger."
+    },
+    {
+      "question": "¿Afirmación correcta sobre HTTP y HTTPS?",
+      "options": [
+        "HTTP es más seguro que HTTPS.",
+        "HTTPS es una versión más segura de HTTP que utiliza el cifrado para proteger la información transmitida.",
+        "HTTPS no cifra la información transmitida.",
+        "HTTP y HTTPS son iguales."
+      ],
+      "correct": ["b"],
+      "explanation": "HTTPS cifra la información, HTTP no."
+    },
+    {
+      "question": "¿Características de un IDS?",
+      "options": [
+        "Monitorea y analiza el tráfico de red en busca de patrones maliciosos o actividades sospechosas.",
+        "Genera alertas o notificaciones cuando se detectan posibles intrusiones o violaciones de seguridad.",
+        "Utiliza firmas y patrones conocidos para identificar y bloquear automáticamente las amenazas.",
+        "Solo protege contra virus."
+      ],
+      "correct": ["a", "b", "c"],
+      "explanation": "Un IDS detecta y alerta sobre amenazas."
+    },
+    {
+      "question": "¿Tipos de vulnerabilidades del sistema?",
+      "options": [
+        "Ineficiencia",
+        "Error al programar",
+        "Error de configuración",
+        "Inexperiencia"
+      ],
+      "correct": ["a", "b", "c", "d"],
+      "explanation": "Son las fuentes principales de vulnerabilidades."
+    },
+    {
+      "question": "¿En qué consiste el cifrado asimétrico?",
+      "options": [
+        "Se basa en la misma clave para cifrar y descifrar el mensaje.",
+        "Se basan en distintas claves para cifrar y descifrar el mensaje.",
+        "Solo se usa para archivos de texto.",
+        "No se utiliza en la actualidad."
+      ],
+      "correct": ["b"],
+      "explanation": "Usa una clave pública y una privada."
+    },
+    {
+      "question": "¿Cuál de estos ataques es un ataque activo?",
+      "options": [
+        "Suplantación de identidad",
+        "Modificación de información",
+        "Degradación de servicios",
+        "Todos son ataques activos"
+      ],
+      "correct": ["d"],
+      "explanation": "Suplantación, modificación y degradación son ataques activos."
+    },
+    {
+      "question": "¿Qué significa VPN?",
+      "options": [
+        "Virtual Network Protocol",
+        "Virtual Private Network",
+        "Red Privada Virtual",
+        "Virtual Public Network"
+      ],
+      "correct": ["b", "c"],
+      "explanation": "VPN es una red privada virtual."
+    },
+    {
+      "question": "¿Afirmación correcta sobre demonios (daemons) en Linux?",
+      "options": [
+        "Los demonios son programas que se ejecutan en primer plano y requieren interacción constante.",
+        "Los demonios son programas que se ejecutan en segundo plano y no interactúan con el usuario.",
+        "Los demonios solo existen en Windows.",
+        "Los demonios se utilizan para juegos."
+      ],
+      "correct": ["b"],
+      "explanation": "Los daemons trabajan en segundo plano."
+    },
+    {
+      "question": "¿Objetivos de la monitorización en sistemas de TI?",
+      "options": [
+        "Asegurar que el nivel de disponibilidad requerido esté proporcionado.",
+        "Permitir la supervisión y análisis de la disponibilidad asegurando que los servicios funcionen.",
+        "Minimizar el tiempo de detección de incidentes.",
+        "Solo aumentar el consumo de recursos."
+      ],
+      "correct": ["a", "b", "c"],
+      "explanation": "La monitorización busca garantizar disponibilidad y rapidez en la detección de problemas."
+    },
+        {
+      "question": "¿Qué procesos del sistema se encuentran en ejecución en Linux?",
+      "options": [
+        "Solo procesos del sistema (propios del núcleo)",
+        "Solo procesos de usuario",
+        "Procesos del sistema (propios del núcleo), procesos de usuario del sistema y procesos del usuario administrador.",
+        "Solo procesos del usuario administrador."
+      ],
+      "correct": ["c"],
+      "explanation": "Existen procesos del sistema, de usuarios y del administrador."
+    },
+    {
+      "question": "El tiempo de resolución está dividido en:",
+      "options": [
+        "Tiempo de reacción y tiempo de recuperación.",
+        "Tiempo de diagnóstico y tiempo de reparación.",
+        "Tiempo de detección, tiempo de diagnóstico, tiempo de reparación y tiempo de recuperación.",
+        "Solo tiempo de reparación."
+      ],
+      "correct": ["c"],
+      "explanation": "Son las fases para resolver un incidente."
+    },
+    {
+      "question": "La monitorización del sistema puede ser a nivel de:",
+      "options": [
+        "Solo hardware",
+        "Hardware, software, usuarios y tráfico de red",
+        "Solo software",
+        "Solo tráfico de red"
+      ],
+      "correct": ["b"],
+      "explanation": "Se monitorizan todos estos niveles."
+    },
+    {
+      "question": "¿Función principal del directorio /etc/init.d en Linux?",
+      "options": [
+        "Controla servicios del sistema al arrancar.",
+        "Almacena archivos de usuario.",
+        "Guarda logs del sistema.",
+        "Administra usuarios."
+      ],
+      "correct": ["a"],
+      "explanation": "/etc/init.d contiene scripts para iniciar/parar servicios."
+    },
+    {
+      "question": "¿Herramienta en Linux para rotar y gestionar logs?",
+      "options": [
+        "Syslog",
+        "journalctl",
+        "Logrotate",
+        "dmesg"
+      ],
+      "correct": ["c"],
+      "explanation": "Logrotate gestiona la rotación de logs."
+    },
+    {
+      "question": "¿Comando para obtener información sobre un servicio en Linux?",
+      "options": [
+        "sudo systemctl status [nombre_del_servicio]",
+        "sudo usermod [nombre_del_servicio]",
+        "sudo chmod [nombre_del_servicio]",
+        "sudo mkfs [nombre_del_servicio]"
+      ],
+      "correct": ["a"],
+      "explanation": "systemctl status muestra el estado de un servicio."
+    },
+    {
+      "question": "¿Afirmación correcta sobre la programación de tareas?",
+      "options": [
+        "Para programar tareas administrativas, se requiere hacerlo desde un usuario con privilegios.",
+        "Cualquier usuario puede programar tareas administrativas.",
+        "Solo el sistema puede programar tareas.",
+        "No se pueden programar tareas en Linux."
+      ],
+      "correct": ["a"],
+      "explanation": "Se necesitan privilegios para tareas administrativas."
+    },
+    {
+      "question": "¿Diferencia entre copia de seguridad completa, incremental y diferencial?",
+      "options": [
+        "La copia completa copia todos los datos, la incremental solo los nuevos desde la última copia y la diferencial los modificados desde la última completa.",
+        "La copia completa copia solo los archivos nuevos, la incremental todos y la diferencial ninguno.",
+        "La copia incremental copia todos los datos, la completa solo los nuevos y la diferencial solo los eliminados.",
+        "No existe diferencia."
+      ],
+      "correct": ["a"],
+      "explanation": "Completa: todo, incremental: cambios desde la última (cualquiera), diferencial: cambios desde la última completa."
+    },
+    {
+      "question": "¿Qué es la ventilación en un campus informático?",
+      "options": [
+        "Sistema de climatización y ventiladores para mantener temperatura y humedad adecuadas.",
+        "Un sistema de seguridad.",
+        "Un tipo de software.",
+        "Un protocolo de red."
+      ],
+      "correct": ["a"],
+      "explanation": "La ventilación mantiene las condiciones óptimas para los equipos y usuarios."
+    },
+    {
+      "question": "¿Qué son los fundamentos criptográficos?",
+      "options": [
+        "Estudio de técnicas de cifrado y descifrado para proteger la información.",
+        "Sistema de archivos de Linux.",
+        "Un tipo de software antivirus.",
+        "Un protocolo de red."
+      ],
+      "correct": ["a"],
+      "explanation": "La criptografía estudia técnicas para proteger la confidencialidad, integridad y autenticidad de los datos."
+    },
+        {
+      "question": "¿Qué es la criptografía?",
+      "options": [
+        "La práctica de proteger información mediante el uso de algoritmos codificados, hashes y firmas.",
+        "Un sistema de compresión de datos.",
+        "Un protocolo de red.",
+        "Una técnica de almacenamiento masivo."
+      ],
+      "correct": ["a"],
+      "explanation": "La criptografía es la práctica de proteger información mediante algoritmos que transforman los datos en un formato ilegible para quienes no poseen la clave adecuada.[2][3][6]"
+    },
+    {
+      "question": "¿Cuáles son los objetivos principales de la criptografía?",
+      "options": [
+        "Confidencialidad, integridad, autenticación y no repudio.",
+        "Velocidad y compresión.",
+        "Redundancia y disponibilidad.",
+        "Compatibilidad y escalabilidad."
+      ],
+      "correct": ["a"],
+      "explanation": "La criptografía busca garantizar la confidencialidad, integridad, autenticación y no repudio de la información.[2][3][5][6]"
+    },
+    {
+      "question": "¿Qué es la criptografía simétrica?",
+      "options": [
+        "Un método que utiliza la misma clave para cifrar y descifrar la información.",
+        "Un método que utiliza dos claves diferentes para cifrar y descifrar.",
+        "Un sistema de almacenamiento seguro.",
+        "Un tipo de hardware criptográfico."
+      ],
+      "correct": ["a"],
+      "explanation": "La criptografía simétrica utiliza una única clave para cifrar y descifrar el mensaje.[3][4][5][6]"
+    },
+    {
+      "question": "¿Qué es la criptografía asimétrica?",
+      "options": [
+        "Un método que utiliza la misma clave para cifrar y descifrar.",
+        "Un método que utiliza dos claves diferentes: una pública y una privada.",
+        "Un sistema de almacenamiento seguro.",
+        "Un tipo de hardware criptográfico."
+      ],
+      "correct": ["b"],
+      "explanation": "La criptografía asimétrica emplea un par de claves: una pública para cifrar y una privada para descifrar.[3][4][5][6]"
+    },
+    {
+      "question": "¿Qué es una función hash en criptografía?",
+      "options": [
+        "Una función que transforma una entrada variable en una salida de longitud fija.",
+        "Un algoritmo de cifrado simétrico.",
+        "Un protocolo de comunicación.",
+        "Un tipo de hardware de seguridad."
+      ],
+      "correct": ["a"],
+      "explanation": "Una función hash genera un valor único que representa un texto o conjunto de datos, y se usa para validar la integridad.[3]"
+    },
+    {
+      "question": "¿Qué es una firma digital?",
+      "options": [
+        "Un mecanismo que permite verificar la autenticidad e integridad de un mensaje mediante criptografía.",
+        "Un tipo de virus informático.",
+        "Un protocolo de almacenamiento.",
+        "Un sistema de compresión de datos."
+      ],
+      "correct": ["a"],
+      "explanation": "La firma digital permite verificar la autenticidad e integridad de los mensajes usando criptografía.[3]"
+    },
+    {
+      "question": "¿Qué es la criptografía de curva elíptica (ECC)?",
+      "options": [
+        "Una técnica de criptografía de clave pública basada en la teoría matemática de las curvas elípticas.",
+        "Un algoritmo de compresión de datos.",
+        "Un sistema de almacenamiento redundante.",
+        "Un tipo de hardware criptográfico."
+      ],
+      "correct": ["a"],
+      "explanation": "La ECC es una técnica de criptografía de clave pública eficiente y segura, utilizada en dispositivos con poca capacidad de cálculo.[2]"
+    },
+    {
+      "question": "¿Qué es el cifrado César?",
+      "options": [
+        "Un método antiguo que consistía en el desplazamiento fijo de las letras del alfabeto.",
+        "Un algoritmo de compresión.",
+        "Un protocolo de red.",
+        "Un sistema de almacenamiento seguro."
+      ],
+      "correct": ["a"],
+      "explanation": "El cifrado César es un ejemplo primitivo de cifrado simétrico.[3][5]"
+    },
+    {
+      "question": "¿Qué es el ataque de fuerza bruta en criptografía?",
+      "options": [
+        "Intentar descifrar un mensaje probando todas las combinaciones posibles de claves.",
+        "Un ataque físico al hardware.",
+        "Un tipo de virus informático.",
+        "Un protocolo de red inseguro."
+      ],
+      "correct": ["a"],
+      "explanation": "El ataque de fuerza bruta consiste en probar todas las combinaciones posibles de claves para descifrar un mensaje.[5][6]"
+    },
+    {
+      "question": "¿Qué es la criptografía cuántica?",
+      "options": [
+        "Una técnica que utiliza los principios de la mecánica cuántica para proteger los datos.",
+        "Un algoritmo de compresión.",
+        "Un sistema de almacenamiento redundante.",
+        "Un tipo de hardware criptográfico."
+      ],
+      "correct": ["a"],
+      "explanation": "La criptografía cuántica utiliza la física cuántica para proteger los datos de una manera teóricamente inmune a hackers.[6]"
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+  ]
+}
