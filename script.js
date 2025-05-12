@@ -6,7 +6,7 @@ let reviewingMistakes = false;
 let mistakes = [];
 let correctCount = 0;
 let incorrectCount = 0;
-let answered = false; // Variable de estado para controlar el flujo
+let answered = false;
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -39,7 +39,7 @@ function showProgress() {
 }
 
 function showQuestion() {
-  answered = false; // Resetear estado al mostrar nueva pregunta
+  answered = false;
   const q = questions[currentQuestion];
   const isMultiple = q.correct.length > 1;
   let html = `
