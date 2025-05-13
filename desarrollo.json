@@ -1,0 +1,20 @@
+{
+  "devQuestions": [
+    {
+      "question": "Explica los tipos de copias de seguridad que existen.",
+      "answer": "Existen cuatro tipos principales: Completa (copia todos los datos), Incremental (copia solo los cambios desde el último backup), Diferencial (copia los cambios desde la última copia completa) y Espejo (réplica exacta del sistema). Cada una tiene ventajas y desventajas en cuanto a espacio, rapidez y facilidad de restauración."
+    },
+    {
+      "question": "Fundamentos criptográficos",
+      "answer": "La criptografía protege la información mediante técnicas de cifrado. Sus pilares son: confidencialidad (solo acceden usuarios autorizados), integridad (los datos no se alteran), autenticación (verifica la identidad del emisor) y no repudio (impide negar la autoría). Se usan algoritmos simétricos, asimétricos, funciones hash y firmas digitales."
+    },
+    {
+      "question": "¿Cómo funciona la ventilación en el CPD?",
+      "answer": "En un CPD, los sistemas de climatización controlan temperatura y humedad. Se emplean unidades de precisión que extraen el aire caliente de los equipos y lo sustituyen por aire frío filtrado. El aire se distribuye mediante suelos técnicos o conductos, evitando puntos calientes y manteniendo condiciones óptimas para los equipos."
+    },
+    {
+      "question": "¿Qué es la distribución de carga?",
+      "answer": "Sistema que permite repartir el trabajo entre varios servidores según la demanda. Por ejemplo, si hay pocos usuarios activos, solo se utiliza un servidor. Si aumenta el número de usuarios, el sistema (por ejemplo, en AWS) activa automáticamente más servidores y un balanceador de carga reparte las peticiones entre ellos. Así se garantiza que todos los usuarios tengan acceso rápido y fiable a los servicios, optimizando recursos y costes, ya que solo se usan los servidores necesarios en cada momento."
+    }
+  ]
+}
