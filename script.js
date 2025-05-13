@@ -123,7 +123,7 @@ function checkAnswer() {
     q.answeredCorrectly = true;
   } else {
     feedback = `<span class="text-red-600 font-bold">Incorrecto.</span> <br>
-      <span class="text-gray-700">Respuesta correcta: <b>${q.correct.join(
+      <span class="text-white">Respuesta correcta: <b>${q.correct.join(
         ", "
       )}</b></span>`;
     showExpBtn = `
