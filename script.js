@@ -240,7 +240,7 @@ document.getElementById('dev-questions-btn').addEventListener('click', async () 
     html += `
       <div class="mb-6">
         <div class="font-semibold text-white mb-1">${idx + 1}. ${q.question}</div>
-        <div class="bg-purple-50 border-l-4 border-purple-400 p-3 text-gray-900 rounded">${q.answer}</div>
+        <div class="bg-blue-50 border-l-4 border-corporate-600 p-3 text-gray-900 rounded">${q.answer}</div>
       </div>
     `;
   });

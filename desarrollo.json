@@ -2,15 +2,15 @@
   "devQuestions": [
     {
       "question": "Explica los tipos de copias de seguridad que existen.",
-      "answer": "Existen cuatro tipos principales: Completa (copia todos los datos), Incremental (copia solo los cambios desde el último backup), Diferencial (copia los cambios desde la última copia completa) y Espejo (réplica exacta del sistema). Cada una tiene ventajas y desventajas en cuanto a espacio, rapidez y facilidad de restauración."
+      "answer": "Existen cuatro tipos principales: Completa (copia todos los datos), Incremental (copia solo los cambios desde el último respaldo), Diferencial (copia los cambios desde la última copia completa) y Espejo (mantiene una réplica idéntica en tiempo real). Cada tipo equilibra espacio, velocidad y facilidad de recuperación según las necesidades de protección de datos."
     },
     {
       "question": "Fundamentos criptográficos",
-      "answer": "La criptografía protege la información mediante técnicas de cifrado. Sus pilares son: confidencialidad (solo acceden usuarios autorizados), integridad (los datos no se alteran), autenticación (verifica la identidad del emisor) y no repudio (impide negar la autoría). Se usan algoritmos simétricos, asimétricos, funciones hash y firmas digitales."
+      "answer": "La criptografía es el conjunto de técnicas que permiten proteger la información, asegurando que solo los usuarios autorizados puedan acceder a ella (confidencialidad), que los datos no sean alterados sin permiso (integridad), que se pueda verificar la identidad de quien envía la información (autenticación) y que nadie pueda negar haber realizado una acción (no repudio). Para lograrlo, se emplean algoritmos de cifrado simétrico y asimétrico, funciones hash y firmas digitales, garantizando la seguridad en las comunicaciones y el almacenamiento de datos."
     },
     {
       "question": "¿Cómo funciona la ventilación en el CPD?",
-      "answer": "En un CPD, los sistemas de climatización controlan temperatura y humedad. Se emplean unidades de precisión que extraen el aire caliente de los equipos y lo sustituyen por aire frío filtrado. El aire se distribuye mediante suelos técnicos o conductos, evitando puntos calientes y manteniendo condiciones óptimas para los equipos."
+      "answer": "La ventilación en el CPD se basa en una orientación física concreta de los racks y servidores y en el uso de un falso suelo refrigerado. El aire acondicionado es esencial y el aire frío se distribuye bajo el suelo técnico, saliendo por rejillas estratégicas para enfriar los equipos. El aire caliente generado es extraído y renovado constantemente para mantener la temperatura óptima, ayudando a evitar puntos calientes y asegurando el buen funcionamiento de los servidores. Todo el sistema está diseñado para mantener condiciones estables y eficientes, combinando la ventilación, la disposición del espacio y la monitorización ambiental."
     },
     {
       "question": "¿Qué es la distribución de carga?",
