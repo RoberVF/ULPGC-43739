@@ -11,42 +11,56 @@
           extend: {
             colors: {
               corporate: {
-                50: '#f0f4f8',
-                100: '#d9e2ec',
-                200: '#bcccdc',
-                300: '#9fb3c8',
-                400: '#829ab1',
-                500: '#627d98',
-                600: '#486581',
-                700: '#334e68',
-                800: '#243b53',
-                900: '#102a43',
+                50: "#f0f4f8",
+                100: "#d9e2ec",
+                200: "#bcccdc",
+                300: "#9fb3c8",
+                400: "#829ab1",
+                500: "#627d98",
+                600: "#486581",
+                700: "#334e68",
+                800: "#243b53",
+                900: "#102a43",
               },
-            }
-          }
-        }
-      }
+            },
+          },
+        },
+      };
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-gradient-to-b from-gray-900 to-corporate-900 min-h-screen flex items-center justify-center p-4 font-[Inter]">
-    <!-- Sutil patrón de fondo -->
-    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgMzBtLTI4IDBhMjggMjggMCAxIDAgNTYgMCAyOCAyOCAwIDEgMC01NiAwWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjAyMDIwIiBzdHJva2Utd2lkdGg9IjAuNSIgb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-20 pointer-events-none"></div>
+  <body
+    class="bg-gradient-to-b from-gray-900 to-corporate-900 min-h-screen flex items-center justify-center p-4 font-[Inter]"
+  >
+    <div
+      class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48cGF0aCBkPSJNMzAgMzBtLTI4IDBhMjggMjggMCAxIDAgNTYgMCAyOCAyOCAwIDEgMC01NiAwWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjAyMDIwIiBzdHJva2Utd2lkdGg9IjAuNSIgb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-20 pointer-events-none"
+    ></div>
 
     <div
       class="w-full max-w-2xl bg-white/5 backdrop-blur-md rounded-lg shadow-2xl p-8 border border-white/10 relative overflow-hidden z-10"
       id="quiz-container"
     >
-      <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-corporate-700 to-corporate-800"></div>
+      <div
+        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-corporate-700 to-corporate-800"
+      ></div>
 
       <h1 class="text-2xl font-bold mb-6 text-center text-white">
         Test de Administración de Sistemas
       </h1>
 
-      <div id="question-section" class="bg-white/10 rounded-lg p-6 shadow-lg border border-white/5 mb-6"></div>
-      
-      <div id="feedback" class="mt-4 text-center p-3 rounded-lg text-white font-medium transition-all duration-300"></div>
-      
+      <div
+        id="question-section"
+        class="bg-white/10 rounded-lg p-6 shadow-lg border border-white/5 mb-6"
+      ></div>
+
+      <div
+        id="feedback"
+        class="mt-4 text-center p-3 rounded-lg text-white font-medium transition-all duration-300"
+      ></div>
+
       <div class="flex justify-between mt-6">
         <button
           id="prev-btn"
@@ -54,47 +68,87 @@
           disabled
         >
           <span class="flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1.5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-1.5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              />
             </svg>
             Anterior
           </span>
         </button>
-        
+
         <button
           id="next-btn"
           class="bg-corporate-600 text-white px-5 py-2.5 rounded hover:bg-corporate-700 shadow-lg transition-all duration-200 font-medium"
         >
           <span class="flex items-center">
             Siguiente
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1.5" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 ml-1.5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
             </svg>
           </span>
         </button>
       </div>
-      
-      <div id="score-section" class="mt-8 text-center hidden bg-corporate-800/50 backdrop-blur-sm p-6 rounded-lg border border-corporate-700/50 shadow-lg"></div>
+
+      <div
+        id="score-section"
+        class="mt-8 text-center hidden bg-corporate-800/50 backdrop-blur-sm p-6 rounded-lg border border-corporate-700/50 shadow-lg"
+      ></div>
 
       <button
         id="dev-questions-btn"
-        class="mt-8 bg-gray-800 text-white px-5 py-3 rounded hover:bg-gray-700 shadow-lg transition-all duration-200 w-full font-medium flex items-center justify-center"
+        class="mt-8 mb-4 bg-gray-800 text-white px-5 py-3 rounded hover:bg-gray-700 shadow-lg transition-all duration-200 w-full font-medium flex items-center justify-center"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 mr-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+          />
         </svg>
         Ver preguntas de desarrollo
       </button>
-      
+
       <div
         id="dev-questions-section"
         class="mt-8 bg-gray-800/90 backdrop-blur-sm rounded-lg p-6 shadow-lg border border-gray-700/50"
         style="display: none"
-      >
-      </div>
+      ></div>
 
-      <div class="w-full flex justify-center mt-6 opacity-70">
-        <div class="h-0.5 w-16 bg-corporate-600 rounded-full"></div>
+      <div class="w-full mt-3 mb-1 absolute z-10 left-0 bottom-0">
+        <p class="text-sm text-gray-400 text-center">
+          Desarrollado por
+          <a
+            href="https://www.linkedin.com/in/roberto-morales-fumero-5186891a8/"
+            target="_blank"
+            class="text-corporate-600 hover:text-corporate-700 transition-all duration-200"
+          >
+            Roberto Morales</a
+          >
+        </p>
       </div>
     </div>
 

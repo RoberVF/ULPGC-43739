@@ -15,6 +15,10 @@
     {
       "question": "¿Qué es la distribución de carga?",
       "answer": "Sistema que permite repartir el trabajo entre varios servidores según la demanda. Por ejemplo, si hay pocos usuarios activos, solo se utiliza un servidor. Si aumenta el número de usuarios, el sistema (por ejemplo, en AWS) activa automáticamente más servidores y un balanceador de carga reparte las peticiones entre ellos. Así se garantiza que todos los usuarios tengan acceso rápido y fiable a los servicios, optimizando recursos y costes, ya que solo se usan los servidores necesarios en cada momento."
+    },
+    {
+      "question": "Cloud Computing",
+      "answer": "Modelo que permite acceder a recursos informáticos (como servidores, almacenamiento o aplicaciones) a través de internet, sin necesidad de gestionarlos físicamente. Sus principales ventajas son la escalabilidad (adaptar recursos según demanda), el ahorro de costes (pago por uso), la accesibilidad desde cualquier lugar y la facilidad para implementar copias de seguridad y recuperación ante desastres. AWS es un ejemplo de ello."
     }
   ]
 }
